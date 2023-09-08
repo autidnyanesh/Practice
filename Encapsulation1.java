@@ -3,7 +3,7 @@ package No;
 import java.util.Scanner;
 
 class Employee{
-    private int employee_id;
+    private int employee_id=100;
     private String employee_name;
     private int employee_salary;
     public int getEmployee_id() {
@@ -24,9 +24,9 @@ class Employee{
     public void setEmployee_salary(int employee_salary) {
         this.employee_salary = employee_salary;
     }
-    public String displayEmployeeDetails() {
-        return "Employee ID: " + employee_id + "\nEmployee Name: " + employee_name + "\nEmployee Salary: $" + employee_salary;
-    }
+//    public String displayEmployeeDetails() {
+//        return "Employee ID: " + employee_id + "\nEmployee Name: " + employee_name + "\nEmployee Salary: $" + employee_salary;
+//    }
 
 }
 public class Encapsulation1 {
@@ -43,9 +43,18 @@ public class Encapsulation1 {
         System.out.println("Employee salary: ");
         obj.setEmployee_salary(sc.nextInt());
 
-        System.out.println(obj.displayEmployeeDetails());
+        System.out.println(obj.getEmployee_id());
+        System.out.println(obj.getEmployee_name());
+        System.out.println(obj.getEmployee_salary());
+
+      //  System.out.println(obj.displayEmployeeDetails());
 
 
+
+
+
+    }
+}
 
 
 
